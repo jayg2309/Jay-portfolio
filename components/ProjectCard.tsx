@@ -19,6 +19,19 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       </div>
       <div className="p-6 flex flex-col flex-grow">
         <h3 className="text-xl font-bold text-accent mb-2">{project.title}</h3>
+        {project.techStack && project.techStack.length > 0 && (
+          <div className="flex flex-wrap gap-2 mb-3">
+            {project.techStack.map((tech, index) => (
+              <span 
+                key={index} 
+                className="px-3 py-1.5 bg-gray-100 dark:bg-gray-800 text-xs rounded-full text-text-secondary 
+                         transition-all duration-300 hover:bg-accent/10 hover:text-accent font-medium"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
+        )}
         <p className="text-text-secondary text-base mb-4 flex-grow">{project.description}</p>
         <div className="mt-auto flex items-center space-x-4">
           <a

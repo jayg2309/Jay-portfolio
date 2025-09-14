@@ -22,6 +22,7 @@ export interface Project {
   title: string;
   description: string;
   imageUrl: string;
+  techStack?: string[];
   githubUrl: string;
   liveUrl: string;
 }

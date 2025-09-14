@@ -29,7 +29,7 @@ const About: React.FC = () => {
             {/* Resume Download Button */}
             <div className="flex justify-center lg:justify-start">
               <a
-                href="/resume.pdf"
+                href="/JG-Resume-Portfolio.pdf"
                 download="Jay_Gondaliya_Resume.pdf"
                 className="group relative inline-flex items-center gap-3 bg-secondary border-2 border-border text-text-primary font-semibold px-8 py-4 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:border-text-primary hover:bg-text-primary hover:text-primary overflow-hidden"
               >
