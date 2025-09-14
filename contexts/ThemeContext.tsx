@@ -50,12 +50,12 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
     
     if (theme === 'dark') {
       root.classList.add('dark');
-      root.style.setProperty('--color-primary', '#0f172a');
-      root.style.setProperty('--color-secondary', '#1e293b');
-      root.style.setProperty('--color-accent', '#3b82f6');
-      root.style.setProperty('--color-text-primary', '#f1f5f9');
-      root.style.setProperty('--color-text-secondary', '#cbd5e1');
-      root.style.setProperty('--color-border', '#334155');
+      root.style.setProperty('--color-primary', '#000000');
+      root.style.setProperty('--color-secondary', '#111111');
+      root.style.setProperty('--color-accent', '#ffffff');
+      root.style.setProperty('--color-text-primary', '#ffffff');
+      root.style.setProperty('--color-text-secondary', '#a1a1aa');
+      root.style.setProperty('--color-border', '#27272a');
     } else {
       root.classList.remove('dark');
       root.style.setProperty('--color-primary', '#ffffff');

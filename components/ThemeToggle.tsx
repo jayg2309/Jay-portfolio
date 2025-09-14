@@ -7,13 +7,13 @@ const ThemeToggle: React.FC = () => {
   return (
     <button
       onClick={toggleTheme}
-      className="relative p-2 rounded-lg bg-secondary border border-border hover:bg-accent/10 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-accent/50"
+      className="relative p-2 rounded-lg bg-secondary border border-border hover:bg-border/50 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-border"
       aria-label={`Switch to ${theme === 'light' ? 'dark' : 'light'} mode`}
     >
       <div className="relative w-6 h-6">
         {/* Sun Icon */}
         <svg
-          className={`absolute inset-0 w-6 h-6 text-accent transition-all duration-300 ${
+          className={`absolute inset-0 w-6 h-6 text-text-primary transition-all duration-300 ${
             theme === 'dark' ? 'rotate-90 scale-0' : 'rotate-0 scale-100'
           }`}
           fill="none"
@@ -26,7 +26,7 @@ const ThemeToggle: React.FC = () => {
         
         {/* Moon Icon */}
         <svg
-          className={`absolute inset-0 w-6 h-6 text-accent transition-all duration-300 ${
+          className={`absolute inset-0 w-6 h-6 text-text-primary transition-all duration-300 ${
             theme === 'light' ? '-rotate-90 scale-0' : 'rotate-0 scale-100'
           }`}
           fill="none"
