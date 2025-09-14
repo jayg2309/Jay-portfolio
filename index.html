@@ -9,15 +9,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
+        darkMode: 'class',
         theme: {
           extend: {
             colors: {
-              'primary': '#0D1117',
-              'secondary': '#161B22',
-              'accent': '#58A6FF',
-              'text-primary': '#C9D1D9',
-              'text-secondary': '#8B949E',
-              'border': '#30363D',
+              'primary': 'var(--color-primary)',
+              'secondary': 'var(--color-secondary)',
+              'accent': 'var(--color-accent)',
+              'text-primary': 'var(--color-text-primary)',
+              'text-secondary': 'var(--color-text-secondary)',
+              'border': 'var(--color-border)',
             },
             fontFamily: {
               sans: ['Inter', 'sans-serif'],
@@ -26,6 +27,16 @@
         },
       }
     </script>
+    <style>
+      :root {
+        --color-primary: #ffffff;
+        --color-secondary: #f8fafc;
+        --color-accent: #3b82f6;
+        --color-text-primary: #1e293b;
+        --color-text-secondary: #64748b;
+        --color-border: #e2e8f0;
+      }
+    </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
