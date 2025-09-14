@@ -10,7 +10,13 @@ interface ProjectCardProps {
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   return (
     <div className="bg-secondary rounded-lg overflow-hidden shadow-lg hover:shadow-accent/20 transition-all duration-300 transform hover:-translate-y-1 flex flex-col">
-      <img src={project.imageUrl} alt={project.title} className="w-full h-48 object-cover" />
+      <div className="w-full h-48 bg-secondary flex items-center justify-center p-2">
+        <img 
+          src={project.imageUrl} 
+          alt={project.title} 
+          className="max-w-full max-h-full object-contain" 
+        />
+      </div>
       <div className="p-6 flex flex-col flex-grow">
         <h3 className="text-xl font-bold text-accent mb-2">{project.title}</h3>
         <p className="text-text-secondary text-base mb-4 flex-grow">{project.description}</p>
