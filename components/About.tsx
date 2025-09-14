@@ -10,7 +10,7 @@ const About: React.FC = () => {
           <div className="flex-shrink-0">
             <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl border-4 border-border">
               <img 
-                src="https://picsum.photos/seed/jayprofile/400/400" 
+                src="public/images/profile/profile.jpg" 
                 alt="Jay Gondaliya Profile" 
                 className="w-full h-full object-cover"
               />
