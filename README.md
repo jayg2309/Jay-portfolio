@@ -16,5 +16,3 @@ Follow the steps below to set up and run the project locally:
 4.  **Open your browser and navigate to:**
     
     👉 `http://localhost:5173`
-
-````
