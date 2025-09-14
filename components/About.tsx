@@ -23,7 +23,7 @@ const About: React.FC = () => {
               Hi, I'm <span className="text-text-primary">Jay Gondaliya</span>
             </h1>
             <p className="text-lg md:text-xl text-text-secondary leading-relaxed mb-8">
-                I'm a software developer with a passion for building complete, scalable applications. My experience spans <span className="text-text-primary font-medium">full-stack development</span>, from front-end interfaces to back-end logic, and extends into <span className="text-text-primary font-medium">DevOps</span> and cloud platforms like <span className="text-text-primary font-medium">AWS</span> to ensure smooth and automated deployment pipelines. I have hands-on experience as a DevOps Intern at PitchMatter and have led technical workshops as the DevOps Co-Lead for the Google Developers Student Club.
+                I'm a software developer with a passion for building complete, scalable applications. My experience spans <span className="text-text-primary font-medium">full-stack development</span>, from front-end interfaces to back-end logic, and extends into <span className="text-text-primary font-medium">DevOps</span> and cloud platforms like <span className="text-text-primary font-medium">AWS</span> to ensure smooth and automated deployment pipelines. I have hands-on experience as a DevOps Intern and have led technical workshops.
             </p>
             
             {/* Resume Download Button */}
